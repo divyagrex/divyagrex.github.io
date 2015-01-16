@@ -6,6 +6,10 @@ body{
     overflow: hidden;
 }
 
+button, input{
+    outline: none;
+}
+
 /* header*/
 
 .row.header {
@@ -85,6 +89,8 @@ button.demoButton {
     text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
     padding: 2%;
     padding-left: 9%;
+    position: relative;
+
 }
 
 .tagLine {
@@ -107,7 +113,7 @@ button.demoButton {
 }
 
 /*login body*/
-button.LoginPush {
+button.LoginPush, .registerPush {
     background: #275D90;
     border: 1px solid #275D90;
     padding: 0.5% 1%;
@@ -124,7 +130,7 @@ form.loginForm {
     padding: 8%;
     margin-top: -4%;
 }
-.loginFormPage {
+.loginFormPage , .registerPage{
     margin-top: -5%;
     padding-left: 20%;
     transition: 0.2s all linear;
@@ -158,7 +164,59 @@ button.signIn {
 .moveRight{
     transform: translateX(79%);
 }
+
+.moveReg{
+    transform: translateX(0) !important;
+
+
+}
 /*end login body*/
+
+/*Register body*/
+
+.registerPage{
+    position: absolute;
+    top: 0;
+    padding-left: 0;
+    margin-top: 6%;
+    width: 50%;
+    border: 2px solid;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 5px;
+    margin-left: 17%;
+    transform: translateX(149%);
+}
+
+.contentBodyReg{
+    text-align: center;
+
+}
+button.registerPush {
+    position: absolute;
+    margin-left: -7.3%;
+    margin-top: 3%;
+    padding: 1% 1%;
+}
+
+.registerButtons button {
+    background: transparent;
+    border: 2px solid white;
+    padding: 1%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    margin-top: 5%;
+    margin-bottom: 9%;
+    margin-right: 2%;
+}
+
+.registerButtons img{
+    width: 40%;
+}
+/* end Register body*/
+
+
 /*end body*/
 
 /*footer */

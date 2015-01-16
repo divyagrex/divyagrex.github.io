@@ -5,13 +5,16 @@
 $(document).ready(function(){
 
     var login=0;
+    var reg=0;
     var dropDown=0;
    $(".LoginPush").on("click",function(){
        /*alert("hel");*/
         if(login==0) {
             $(".mainText").addClass("moveLeft");
             $(".loginFormPage").removeClass("moveRight");
+            $(".registerPage").removeClass("moveReg");
             login=1;
+            reg=0;
         }
 
        else{
@@ -21,6 +24,27 @@ $(document).ready(function(){
 
         }
    });
+
+    $(".registerPush").on("click",function(){
+        /*alert("hel");*/
+        if(reg==0) {
+            $(".mainText").addClass("moveLeft");
+            $(".registerPage").addClass("moveReg");
+            $(".loginFormPage").addClass("moveRight");
+
+            console.log("not");
+            reg=1;
+            login=0
+        }
+
+        else{
+            $(".mainText").removeClass("moveLeft");
+            $(".registerPage").removeClass("moveReg");
+            reg=0;
+
+        }
+
+    });
 
 
     $(".demoButton").on("click",function(){
@@ -38,6 +62,8 @@ $(document).ready(function(){
             dropDown=0;
         }
     });
+
+
 
 
     /*carousel*/
