@@ -1,0 +1,185 @@
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* header*/
+
+.row.header {
+    margin-top: 1%;
+}
+
+input.search {
+    width: 100%;
+    border-radius: 13px;
+    border: 1px solid #919191;
+    padding: 2%;
+    outline: none;
+}
+
+button.searchButton {
+    background: #275D90;
+    border: 1px solid #275D90;
+    position: absolute;
+    top: 0;
+    border-radius: 100%;
+    left: 84%;
+    color: white;
+    width: 1.9vw;
+    height: 1.9vw;
+    outline: none;
+}
+
+/*dropdown*/
+button.demoButton {
+    color: #275D90;
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid rgba(0,0,0,0.7);
+    margin-left: 48%;
+    margin-top: -2.7%;
+}
+
+
+.dropDown {
+    margin-top: 12%;
+    margin-left: -100%;
+    position: absolute;
+    width: 260%;
+    height: 15vw;
+    border-radius: 5px;
+    background: rgba(0,0,0,0.7);
+
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.2s all linear;
+    transition-delay: 0.2s;
+}
+
+.openDropdown{
+    transform: scaleY(1);
+
+}
+/*end dropdown*/
+
+/* end header*/
+
+/*body*/
+.row.body {
+    margin-top: 0.5%;
+    width: 100vw;
+    height: 75vh;
+    background: url(bg/background12.jpg);
+    background-size: cover;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    padding: 2%;
+    padding-left: 9%;
+}
+
+.tagLine {
+    font-size: 120%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+.body h1{
+    font-family: 'Righteous', cursive;
+}
+
+.moveLeft{
+    transform: translateX(-100%);
+}
+
+.mainText{
+    transition: 0.2s all linear;
+    transition-delay: 0.2s;
+}
+
+/*login body*/
+button.LoginPush {
+    background: #275D90;
+    border: 1px solid #275D90;
+    padding: 0.5% 1%;
+    border-radius: 5px;
+    transform: rotate(270deg);
+}
+
+form.loginForm {
+    text-align: center;
+    margin-left: 4.2%;
+    width: 50%;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 8%;
+    margin-top: -4%;
+}
+.loginFormPage {
+    margin-top: -5%;
+    padding-left: 20%;
+    transition: 0.2s all linear;
+    transition-delay: 0.2s;
+}
+
+.loginForm input {
+    /*background: transparent;*/
+    color: #000000;
+    border: 2px solid white;
+    border-radius: 9px;
+    padding: 2%;
+    width: 70%;
+    text-align: center;
+    outline: 0;
+}
+
+.container1 {
+    margin-bottom: 2%;
+}
+
+button.signIn {
+    background: #125E14;
+    border: 1px solid #125E14;
+    width: 70%;
+    padding: 1%;
+    border-radius: 5px;
+    margin-left: 5%;
+}
+
+.moveRight{
+    transform: translateX(79%);
+}
+/*end login body*/
+/*end body*/
+
+/*footer */
+.border {
+    border-bottom: 1px solid;
+    width: 100%;
+}
+
+.footer{
+    color: #053562;
+    margin-top: 0.5%;
+}
+
+.subFooter {
+    font-size: 105%;
+    line-height: 160%;
+}
+
+.border {
+    border-bottom: 1px solid;
+    width: 72%;
+    margin-bottom: 2%;
+}
+/*end footer */
