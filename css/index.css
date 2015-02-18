@@ -57,30 +57,53 @@ button.demoButton {
     outline: 0;
     margin-top: 8%;
 }
+
 .arrow-up {
     width: 0;
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 10px solid rgba(0,0,0,0.7);
-    margin-left: 48%;
-    margin-top: -3.3%;
+    border-bottom: 10px solid rgba(27, 35, 42, 0.97);
+    margin-left: 44%;
+    margin-top: -5.1%;
 }
 
 
 .dropDown {
+    z-index: 10;
     margin-top: 12%;
-    margin-left: -100%;
+    margin-left: -195%;
     position: absolute;
-    width: 260%;
+    width: 550px;
+    color: #ffffff;
+    padding: 20%;
     height: 15vw;
     border-radius: 5px;
-    background: rgba(0,0,0,0.7);
+    background: rgba(27, 35, 42, 0.97);
 
     transform: scaleY(0);
     transform-origin: top;
     transition: 0.2s all linear;
     transition-delay: 0.2s;
+}
+
+.dropTitle{
+    border-bottom: 1px solid #ffffff;
+
+}
+
+.subTopics {
+    color: white;
+    padding: 3% 0%;
+}
+
+.subTopics:hover a{
+    text-decoration: none;
+    color: #d9b755;
+}
+
+.subTopics a{
+    color: #ffffff;
 }
 
 .openDropdown{
@@ -131,7 +154,7 @@ button.demoButton {
 
 .registerPage,
 .loginForm{
-    background: rgba(0,0,0,0.7);
+    background: rgba(27, 35, 42, 0.97);
 }
 
 button.LoginPush, .registerPush {
@@ -156,7 +179,7 @@ form.loginForm {
     margin-top: -4%;
 }
 .loginFormPage , .registerPage{
-    margin-top: -12%;
+    margin-top:-17%;
     padding-left: 20%;
     transition: 0.2s all linear;
     transition-delay: 0.2s;
@@ -178,8 +201,9 @@ form.loginForm {
 }
 
 button.signIn {
-    background: #125E14;
-    border: 1px solid #125E14;
+    /*background: #125E14;*/
+    background: transparent;
+    border: 2px solid #d9b755;
     width: 70%;
     padding: 1%;
     border-radius: 5px;
@@ -268,5 +292,13 @@ button.registerPush {
 
 .fade{
     opacity: 0;
+}
+
+button.investorButton {
+    background: #1f497d;
+    border: 2px solid #1f497d;
+    padding: 0.5%;
+    width: 37.2%;
+    margin-top: 2%;
 }
 /*end footer */
