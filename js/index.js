@@ -1,12 +1,37 @@
-/**
- * Created by Amritansh on 1/15/2015.
- */
+
+
+var bg=[".bg1",".bg2"];
+var index=0;
+
+
 
 $(document).ready(function(){
+
+    function changeBg(){
+        $(".active").removeClass("active");
+        $(bg[index]).addClass("active");
+        index++;
+
+        if(index==2){
+            index=0;
+        }
+
+    }
+
+     setInterval(changeBg,5000);
+
 
     var login=0;
     var reg=0;
     var dropDown=0;
+
+    /* changing bg*/
+
+
+
+    /* end changing bg*/
+
+
    $(".LoginPush").on("click",function(){
        /*alert("hel");*/
         if(login==0) {
