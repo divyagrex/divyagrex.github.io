@@ -9,7 +9,24 @@ body{
     background-size: cover;*/
 }
 
+.bg1{
+    background: url(bg/bg1.jpg);
+}
+
+.bg2{
+    background: url(bg/chair.jpg);
+}
+
+.bg3{
+    background: url(bg/girl.jpg);
+}
+
 .bg{
+    width: 100vw;
+    height: 100vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
     opacity: 0;
     transition: 0.8s all linear;
 }
@@ -42,13 +59,13 @@ button.searchButton {
     position: absolute;
     top: 0;
     border-radius: 100%;
-    left: 86.5%;
+    /* left: 86.5%; */
     color: white;
     width: 35px;
     height: 35px;
     outline: none;
+    right: 3%;
 }
-
 /*dropdown*/
 button.demoButton {
     color: #ffffff;
@@ -77,9 +94,9 @@ button.demoButton {
     margin-top: -5.1%;
 }
 
-.login{
+/*.login{
     height: 400px !important;
-}
+}*/
 
 .dropDown {
     z-index: 10;
@@ -89,7 +106,7 @@ button.demoButton {
     width: 550px;
     color: #ffffff;
     padding: 20%;
-    height: 15vw;
+    height: auto;
     border-radius: 5px;
     background: rgba(27, 35, 42, 0.97);
 
@@ -229,8 +246,8 @@ form.loginForm {
     border-radius: 5px;
     box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
     text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
-    margin-top: 5%;
-    margin-bottom: 9%;
+    /*margin-top: 5%;
+    margin-bottom: 9%;*/
     margin-right: 2%;
 }
 
