@@ -11,7 +11,7 @@ body{
 
 .bg{
     opacity: 0;
-    transition: 0.5s all linear;
+    transition: 0.8s all linear;
 }
 
 .active{
@@ -37,12 +37,12 @@ input.search {
 }
 
 button.searchButton {
-    background: #275D90;
-    border: 1px solid #275D90;
+    background: #c3a242;
+    border: 3px solid #c3a242;
     position: absolute;
     top: 0;
     border-radius: 100%;
-    left: 85.5%;
+    left: 86.5%;
     color: white;
     width: 35px;
     height: 35px;
@@ -51,11 +51,20 @@ button.searchButton {
 
 /*dropdown*/
 button.demoButton {
-    color: #275D90;
+    color: #ffffff;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    font-weight: bold;
     background: transparent;
     border: 0;
     outline: 0;
     margin-top: 8%;
+}
+
+.yellowButton{
+    background: #c3a242;
+    border: 2px solid #c3a242;
+    color: #ffffff;
+    border-radius: 5px;
 }
 
 .arrow-up {
@@ -68,6 +77,9 @@ button.demoButton {
     margin-top: -5.1%;
 }
 
+.login{
+    height: 400px !important;
+}
 
 .dropDown {
     z-index: 10;
@@ -92,14 +104,20 @@ button.demoButton {
 
 }
 
-.subTopics {
+.subTopics,
+.forgotPassword{
     color: white;
     padding: 3% 0%;
 }
 
-.subTopics:hover a{
+.subTopics:hover a,
+.forgotPassword:hover{
     text-decoration: none;
     color: #d9b755;
+}
+
+.forgotPassword{
+    font-size: 85%;
 }
 
 .subTopics a{
@@ -131,10 +149,11 @@ button.demoButton {
 }
 
 .tagLine {
-    font-size: 120%;
-    word-spacing: 4px;
+    font-size: 100%;
+    word-spacing: 2px;
     letter-spacing: 1px;
     width: 41%;
+    /*font-family: 'Ubuntu', sans-serif !important;*/
 }
 
 .body h1{
@@ -150,8 +169,15 @@ button.demoButton {
     transition-delay: 0.2s;
 }
 
-/*login body*/
+.mainText h3 {
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
 
+
+
+/*login body*/
+/*
 .registerPage,
 .loginForm{
     background: rgba(27, 35, 42, 0.97);
@@ -177,8 +203,8 @@ form.loginForm {
     border-radius: 5px;
     padding: 8%;
     margin-top: -4%;
-}
-.loginFormPage , .registerPage{
+}*/
+/*.loginFormPage , .registerPage{
     margin-top:-17%;
     padding-left: 20%;
     transition: 0.2s all linear;
@@ -186,7 +212,7 @@ form.loginForm {
 }
 
 .loginForm input {
-    /*background: transparent;*/
+    *//*background: transparent;*//*
     color: #000000;
     border: 2px solid white;
     border-radius: 9px;
@@ -194,6 +220,27 @@ form.loginForm {
     width: 70%;
     text-align: center;
     outline: 0;
+}*/
+
+.registerButtons button {
+    background: transparent;
+    border: 2px solid white;
+    padding: 1%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    margin-top: 5%;
+    margin-bottom: 9%;
+    margin-right: 2%;
+}
+
+.registerButtons button:hover{
+    background: #c3a242;
+}
+
+
+.registerButtons img{
+    width: 40%;
 }
 
 .container1 {
@@ -219,10 +266,12 @@ button.signIn {
 
 
 }
+
+
 /*end login body*/
 
 /*Register body*/
-
+/*
 .registerPage{
     position: absolute;
     top: 0;
@@ -252,7 +301,7 @@ button.registerPush {
     background: transparent;
     border: 2px solid white;
     padding: 1%;
-    /*border-radius: 5px;*/
+    *//*border-radius: 5px;*//*
     box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
     text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
     margin-top: 5%;
@@ -262,7 +311,7 @@ button.registerPush {
 
 .registerButtons img{
     width: 40%;
-}
+}*/
 /* end Register body*/
 
 
@@ -295,10 +344,16 @@ button.registerPush {
 }
 
 button.investorButton {
-    background: #1f497d;
-    border: 2px solid #1f497d;
+    border: 3px solid #c3a242;
     padding: 0.5%;
-    width: 37.2%;
+    background: #c3a242;
+    width: 18%;
     margin-top: 2%;
+    border-radius: 5px;
 }
 /*end footer */
+
+.loginForm{
+    padding-top: 5%;
+}
+

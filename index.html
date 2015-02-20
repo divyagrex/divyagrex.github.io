@@ -10,16 +10,22 @@
 
     <link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
 
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+
     <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/index.js"></script>
 </head>
 <body>
 <div class="bg bg1 active" style="position: absolute">
-    <img src="image/bg1.jpg" alt="" style="height: 100vh;width: 100vw">
+    <img src="image/bg1.jpg" alt="" style="width: 100vw">
 </div>
 
 <div class="bg bg2" style="position: absolute">
-    <img src="image/team.jpg" alt="" style="height: 100vh;width: 100vw">
+    <img src="image/chair.jpg" alt="" style="width: 100vw">
+</div>
+
+<div class="bg bg3" style="position: absolute">
+    <img src="image/girl.jpg" alt="" style="width: 100vw">
 </div>
 
 <div class="container-fluid">
@@ -34,7 +40,7 @@
         </div>
         <!--end grex logo-->
 
-        <div class="col-lg-4 col-md-4 col-xs-4"></div>
+        <div class="col-lg-3 col-md-3 col-xs-3"></div>
 
         <div class="col-lg-1 col-md-1 col-xs-1 demo">
             <button class="demoButton">Demo <div class="glyphicon glyphicon-chevron-down"></div></button>
@@ -73,6 +79,63 @@
             </div>
         </div>
 
+        <div class="col-lg-1 col-md-1 col-xs-1 demo">
+            <button class="demoButton">Login <div class="glyphicon glyphicon-chevron-down"></div></button>
+            <div class="dropDown login">
+                <div class="arrow-up"></div>
+
+                <form action="" name="loginForm" class="loginForm">
+                    <div class="row form-group">
+                        <div class="col-lg-2 col-md-2 col-xs-2"></div>
+                        <label class="col-lg-3 col-md-3 col-xs-3">
+                            Username
+                        </label>
+
+                        <div class="col-lg-5 col-md-5 col-xs-5">
+                            <input type="text" name="username" class="username form-control" />
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col-lg-2 col-md-2 col-xs-2"></div>
+
+                        <label class="col-lg-3 col-md-3 col-xs-3">
+                            Password
+                        </label>
+
+                        <div class="col-lg-5 col-md-5 col-xs-5">
+                            <input type="password" name="password" class="password form-control" />
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col-lg-5 col-md-5 col-xs-5"></div>
+                        <div class="col-lg-5 col-md-5 col-xs-5">
+                            <a href="" class="forgotPassword">Forgot Password?</a>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col-lg-5 col-md-5 col-xs-5"></div>
+                        <div class="col-lg-3 col-md-3 col-xs-3">
+                            <input type="submit" value="Login" class="yellowButton form-control"/>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="text-center">
+                    <h3>Join as</h3>
+                </div>
+
+                <div class="registerButtons text-center">
+                    <button><img src="image/icon/investor.png" alt=""/><h5>INVESTOR</h5></button>
+                    <button><img src="image/icon/company.png" alt=""/><h5>COMPANY</h5></button>
+                </div>
+
+            </div>
+        </div>
+
+
         <!--search box-->
         <div class="col-lg-3 col-md-3 col-xs-3 headerSearchBox">
             <input type="text" class="search" placeholder="Search Companies"/>
@@ -89,8 +152,8 @@
     <!--body-->
     <div class="row body">
         <div class="mainText">
-            <h2 style="margin-top: 5%;">BE THE FORCE</h2>
-            <h2> BEHIND THE NEXT BIG THING</h2>
+            <h3 style="margin-top: 5%;">BE THE FORCE</h3>
+            <h3> BEHIND THE NEXT BIG THING</h3>
 
             <div class="tagLine">Invest in the market defining the technologies of tomorrow</div>
 
@@ -100,7 +163,7 @@
 
         </div>
 
-        <div class="loginFormPage moveRight">
+       <!-- <div class="loginFormPage moveRight">
 
             <button class="LoginPush">Login</button>
 
@@ -140,6 +203,8 @@
 
 
         </div>
+        -->
+
     </div>
     <!--end body-->
 

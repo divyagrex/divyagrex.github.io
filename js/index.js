@@ -1,6 +1,6 @@
 
 
-var bg=[".bg1",".bg2"];
+var bg=[".bg1",".bg2",".bg3"];
 var index=0;
 
 
@@ -12,7 +12,7 @@ $(document).ready(function(){
         $(bg[index]).addClass("active");
         index++;
 
-        if(index==2){
+        if(index==3){
             index=0;
         }
 
@@ -73,17 +73,18 @@ $(document).ready(function(){
 
 
     $(".demoButton").on("click",function(){
-        if(dropDown==0) {
-            $(".dropDown").addClass("openDropdown");
-            $(".glyphicon-chevron-down").addClass("glyphicon-chevron-up");
-            $(".glyphicon-chevron-down").removeClass("glyphicon-chevron-down");
+        if($(this).next().hasClass("openDropdown")!=true) {
+            $(".openDropdown").removeClass("openDropdown");
+            $(this).next().addClass("openDropdown");
+            $(this).find(".glyphicon-chevron-down").addClass("glyphicon-chevron-up");
+            $(this).find(".glyphicon-chevron-down").removeClass("glyphicon-chevron-down");
             dropDown=1;
         }
 
         else{
-            $(".dropDown").removeClass("openDropdown");
-            $(".glyphicon-chevron-up").addClass("glyphicon-chevron-down");
-            $(".glyphicon-chevron-up").removeClass("glyphicon-chevron-up");
+            $(this).next(".dropDown").removeClass("openDropdown");
+            $(this).find(".glyphicon-chevron-up").addClass("glyphicon-chevron-down");
+            $(this).find(".glyphicon-chevron-up").removeClass("glyphicon-chevron-up");
             dropDown=0;
         }
     });
