@@ -6,6 +6,72 @@ var index=0;
 
 
 $(document).ready(function(){
+	
+	function tabChange(){
+		
+		
+		
+		 $('html, body').animate({
+            scrollTop: $("body").offset().top
+        }, 1000);
+					
+					var url=window.location;
+					url=String(url);
+					var pos=url.indexOf("#");
+  					var tab=url.substring(pos+1);
+  					$(".showContent").removeClass("showContent");
+          			$(".active1").removeClass("active1");
+  
+          			tab1="#"+tab;
+          			
+          			 if(tab1=="#whoisbehindit"){
+       	$(".content").addClass("whoisbehinditheight");
+       }
+       
+       else{
+       	$(".content").removeClass("whoisbehinditheight");
+       }
+          
+  
+          			$(tab1).addClass("showContent");
+          			$("."+tab).addClass("active1");
+
+		
+	}
+	
+				$(window).on('hashchange',tabChange);
+				
+				
+				if(window.location.hash) {
+					tabChange();
+										
+					}
+				else {
+  				
+					}
+
+    /* open respective tab*/
+
+  /*
+    var tab= $.cookie("tab");
+      if(tab!=""){
+          
+          $(".showContent").removeClass("showContent");
+          $(".active1").removeClass("active1");
+  
+          tab1="#"+tab;
+          
+  
+          $(tab1).addClass("showContent");
+          $("."+tab).addClass("active1");
+          $.cookie("tab","");
+  
+      }
+  */
+  
+  
+
+    /* end open respective tab*/
 
     function changeBg(){
         $(".active").removeClass("active");
@@ -89,6 +155,37 @@ $(document).ready(function(){
         }
     });
 
+    $(".footer1").on("click",function(){
+
+        /*alert("helo");*/
+        $('html, body').animate({
+            scrollTop: $(".footer").offset().top
+        }, 1000);
+
+    });
+
+
+    $(".footer1").on("click",function(e){
+
+        if($(this).attr("id")!="why") {
+            if ($(".footer").hasClass("moveFooter")) {
+                $(".moveFooter").removeClass("moveFooter");
+                $(".showDropUp").removeClass("showDropUp");
+            }
+            else {
+                $(".footer").addClass("moveFooter");
+                $(".dropUp").addClass("showDropUp");
+            }
+            e.preventDefault();
+        }
+    });
+
+
+    $(".dropLink").on("click",function(){
+       var id=$(this).attr("id");
+        $.cookie("tab",id);
+
+    });
 
 
 
@@ -100,4 +197,50 @@ $(document).ready(function(){
     });
 
     /*end carousel*/
+
+    /* internal page code*/
+
+    $(".nav1 ").on("click","a",function(e){
+
+       var target1=$(this).data("target");
+       if(target1=="#whoisbehindit"){
+       	$(".content").addClass("whoisbehinditheight");
+       }
+       
+       else{
+       	$(".content").removeClass("whoisbehinditheight");
+       }
+        $(".showContent").removeClass("showContent");
+        $(target1).addClass("showContent");
+
+        $(".active1").removeClass("active1");
+        $(this).parent().addClass("active1");
+
+       
+       /* new code */
+       if(history.pushState) {
+    history.pushState(null, null, $(this).attr('data-target')); // URL is now /inbox/N
+    // showMailItem(); // example function to show email based on link clicked
+  }
+      /* end new code */
+       
+        e.preventDefault();
+
+    });
+    
+    var popped = ('state' in window.history && window.history.state !== null), initialURL = location.href;
+    
+  /*
+    $(window).bind('popstate', function (event) {
+    // Ignore inital popstate that some browsers fire on page load
+    var initialPop = !popped && location.href == initialURL
+    popped = true
+    if (initialPop) return;
+  
+    // showMailOverview(); // exmaple function to display all email since the user has click Back.
+  
+  });*/
+  
+
+    /* end internal page code*/
 });

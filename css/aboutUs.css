@@ -4,9 +4,9 @@ body{
     overflow-x: hidden ;
 }
 
-.heading h2 {
+.heading h4 {
     margin: 2% 0%;
-    color: #1f497d;
+    /*color: #1f497d;*/
     text-align: center;
 }
 
@@ -16,7 +16,7 @@ body{
 }
 
 .pictures img {
-    width: 70%;
+    width: 100%;
     margin-left: 10%;
 }
 
@@ -26,7 +26,7 @@ body{
 }
 
 .info {
-    width: 98vw;
+    width: 90vw;
     padding: 2% 15%;
     text-align: justify;
     transform: scaleY(1);
@@ -43,11 +43,11 @@ body{
 
 
 .slide{
-    transform: translateY(100%);
+    transform: translateY(160%);
 }
 
 .heading.row.slide {
-    transform: translateY(190%);
+    transform: translateY(365%);
 }
 
 .two{
@@ -60,8 +60,11 @@ body{
     top: 0;
     background: rgba(0,0,0,0.5);
     width: 100%;
-    height: 191px;
+    /*height: 170px;*/
+   height: 100%;
+    margin-left: 10%;
     opacity: 0;
+    cursor: pointer;
 }
 
 .curtainShow{
@@ -76,3 +79,122 @@ body{
 .fourth{
     margin-left: -74vw;
 }
+
+.pictures h4 {
+    text-align: left !important;
+    margin: 1% 0 !important;
+}
+
+.pictures .col-lg-2:nth-child(3) .info {
+    margin-left: -32vw !important;
+}
+
+.pictures .col-lg-2:nth-child(4) .info {
+    margin-left: -47.5vw;
+}
+
+.pictures .col-lg-2:nth-child(5) .info {
+    margin-left: -63vw;
+}
+
+.pictures .col-lg-2:nth-child(6) .info {
+    margin-left: -78.5vw;
+}
+
+.pictures .col-lg-2:nth-child(1) .info {
+    margin-left: -1vw;
+}
+
+.pictures .col-lg-2:nth-child(2) .info {
+    margin-left: -16.5vw;
+}
+
+#whoIsBehindIt{
+    height: 1500px;
+
+}
+
+.pictures .col-lg-2{
+    padding: 0;
+}
+
+
+
+/*
+	Media queries
+*/
+
+@media screen and (max-width: 1080px) and (min-width: 660px) {
+.info{
+font-size: 100%;
+}
+
+.slide {
+transform: translateY(302%);
+}
+
+.heading.row.slide {
+transform: translateY(625%);
+}
+
+.whoisbehinditheight{
+	height: 1000px;
+}
+
+}
+
+
+@media screen and (max-width: 660px) and (min-width: 100px) {
+	.info{
+		font-size: 100%;
+		}
+
+	.slide{
+		transform: translateY(400%);
+		}
+		
+		.heading.row.slide {
+transform: translateY(690%);
+}
+
+.whoisbehinditheight{
+	height: 1000px;
+}
+
+
+
+}
+
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px){
+	.whoisbehinditheight {
+height: 1500px;
+}
+
+.info div{
+	font-size:200%;
+	text-align: left;
+}
+
+.info h3{
+	font-size: 250%;
+}
+
+.info h4{
+	font-size: 220%;
+}
+}
+/*
+
+@media screen and (min-device-width: 500px) and (max-device-width : 768px){
+	.info{
+font-size: 100%;
+}
+
+.slide {
+transform: translateY(302%);
+}
+}
+*/

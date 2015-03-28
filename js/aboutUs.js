@@ -33,10 +33,11 @@ $(document).ready(function(){
         var active=$(this).prev().prev().hasClass("active");
         var nextPictures=$(this).parent().parent().next();
         var contain=nextPictures.hasClass("slide");
+        var parent=$(this).parent().parent().hasClass("last");
 
 
 
-        if(contain==true && active==true){
+        if(contain==true && active==true || (parent==true && active==true)){
             $(".slide").removeClass("slide");
             $(".curtain").removeClass("curtainShow");
             $(".active").removeClass("active");

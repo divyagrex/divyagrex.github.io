@@ -1,9 +1,16 @@
+.mainBody{
+    height: 100vh;
+    perspective: 300px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 
 body{
     font-family: 'Montserrat', sans-serif;
     width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    /*height: 100vh;*/
+    overflow-x: hidden;
    /* background: url(bg/bg1.jpg);
     -webkit-background-size: cover;
     background-size: cover;*/
@@ -128,7 +135,8 @@ button.demoButton {
 }
 
 .subTopics:hover a,
-.forgotPassword:hover{
+.forgotPassword:hover,
+a.footer1:hover{
     text-decoration: none;
     color: #d9b755;
 }
@@ -153,7 +161,7 @@ button.demoButton {
 .row.body {
     margin-top: 0.5%;
     width: 100vw;
-    height: 75vh;
+    height: 100vh;
   /*  background: url(bg/background12.jpg);
     background-size: cover;
     color: white;*/
@@ -340,11 +348,35 @@ button.registerPush {
     width: 100%;
 }
 
-.footer{
-    color: #053562;
-    margin-top: 0.5%;
+.footer {
+    /* color: #053562; */
+    color: #ffffff;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    background-color: rgba(27, 35, 42, 0.97);
+    height: 125px;
+    margin-top: -8.4%;
+    position: fixed;
+    width: 98.7%;
+    top: 111vh;
+    transition: 0.2s all linear;
+    padding-top: 0.7%;
 }
 
+a.footer1 {
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    font-size: 85%;
+    cursor: hand !important;
+}
+
+.footer .col-lg-2.col-md-2.col-xs-2 {
+    margin-top: 0.8%;
+}
+
+.disclaimer{
+    height: 100px;
+    background: black;
+}
 .subFooter {
     font-size: 105%;
     line-height: 160%;
@@ -374,3 +406,188 @@ button.investorButton {
     padding-top: 5%;
 }
 
+.screen2{
+    height: 100vh;
+    background: #ffffff;
+    padding: 3% 15%;
+}
+
+iframe{
+    width: 100%;
+    height: 500px;
+}
+
+
+.moveFooter{
+    margin-top: -14.2%;
+}
+
+.address{
+    border-top: 1px solid;
+    padding: 2px 0px;
+    margin-top: 2px;
+}
+
+.dropUp{
+    display: none;
+}
+
+.showDropUp{
+    display: block !important;
+}
+
+.col-lg-12.col-md-12.col-xs-12.disclaimer1 {
+    background: black;
+    font-size: 50%;
+    padding: 4px;
+    display: none;
+}
+
+.dropLink {
+    font-size: 80%;
+    color: #ffffff;
+}
+
+.screen2 h3{
+    color: #CC181E;
+}
+
+.loginLink{
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+
+.social img{
+    width: 30%;
+    margin-left: 20%;
+}
+
+a.embedEmail {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/*medi queries */
+
+@media screen and (max-width: 1080px) {
+	.footer{
+    	margin-top: -25.4%;
+    	text-align: center;
+    	height: 315px;
+    	width: 97.2%;
+    }
+    
+    .moveFooter{
+    	margin-top: -56.4%;
+    }
+    
+    .footer .col-lg-2.col-md-2.col-xs-12 {
+border: 1px solid #d9b755;
+}
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width : 1024px){
+    .social img {
+        width: 15%;
+    }
+
+    .social{
+        margin-left: 3%;
+    }
+
+
+    .screen2{
+        height: 150vh;
+    }
+    
+    
+}
+
+
+@media screen and (min-device-width: 500px) and (max-device-width : 768px){
+
+    .bg{
+        width: 100vw;
+        height: 50vh;
+    }
+    
+    .body{
+        height: 50vh !important;
+
+    }
+
+
+    .footer{
+        top: 102vh;
+    }
+
+}
+
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px){
+
+    .bg{
+        width: 100vw;
+        height: 50vh;
+    }
+
+    .body{
+        height: 50vh !important;
+
+    }
+
+
+    .footer{
+        top: 90vh;
+        height: 500px;
+    }
+
+    .moveFooter{
+        margin-top: -32%;
+    }
+
+    .social img {
+        width: 15%;
+    }
+
+    .social{
+        margin-left: 3%;
+    }
+
+
+
+    .sub-tops a {
+        font-size: 230%;
+    }
+
+    p {
+        text-align: start;
+        margin: 5% 0%;
+    }
+
+    h2 {
+        font-size: 400%;
+    }
+
+    .grexLogo img{
+        width: 150%;
+        margin-top: 20%;
+    }
+
+    .footer .col-lg-2.col-md-2.col-xs-12 {
+    	margin-top: 1px;
+    	width: 100vw;
+        text-align: center;
+        padding: 1%;
+        font-size: 115%;
+        /* border: 2px solid black;*/
+        border: 1px solid #d9b755;
+    }
+    
+    .header .col-lg-1.col-md-1{
+        margin-top: 5%;
+    }
+}
