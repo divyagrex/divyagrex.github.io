@@ -229,18 +229,17 @@ $(document).ready(function(){
     });
     
     var popped = ('state' in window.history && window.history.state !== null), initialURL = location.href;
-    
-  /*
-    $(window).bind('popstate', function (event) {
-    // Ignore inital popstate that some browsers fire on page load
-    var initialPop = !popped && location.href == initialURL
-    popped = true
-    if (initialPop) return;
-  
-    // showMailOverview(); // exmaple function to display all email since the user has click Back.
-  
-  });*/
-  
 
     /* end internal page code*/
+   
+   $(".moveDownButton").on("click",function(){
+
+		  /* $(".mainBody").scrollTop($(".mainBody").scrollTop() + $("#screen2").position().top);*/
+		   
+		      $('.mainBody').animate({
+                scrollTop: ($(".mainBody").scrollTop() + $("#screen2").position().top)
+            }, 1000);
+
+	
+   });
 });

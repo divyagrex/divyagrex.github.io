@@ -30,6 +30,21 @@ $(document).ready(function(){
     });
 
     $(".curtain").on("click",function(){
+    	
+    	var parent=$(this).parent();
+    	var max=400;
+parent.children().each(function(index, child) {
+    child=$(child);
+    var childPos=child.position();
+    var childMax=childPos.top+child.outerHeight();
+    if(childMax<max) {
+        max=childMax;
+        
+    }
+   
+});
+ console.log(max);
+    	
         var active=$(this).prev().prev().hasClass("active");
         var nextPictures=$(this).parent().parent().next();
         var contain=nextPictures.hasClass("slide");
